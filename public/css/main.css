@@ -1,0 +1,39 @@
+body {
+    background-color: #CCCCCC;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+img {
+    display: inline-block;
+}
+
+#container {
+    display: block;
+    width:100px;
+    margin: 0 auto;
+}
+
+nav form {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.user-item {
+    line-height: 25px;
+    background-color: #D9EDF6;
+    margin-bottom:10px;
+    color: #337AB6;
+    font-size: 25px;
+    padding:10px;
+}
+
+nav {
+    background-color: #CCCCCC;
+}

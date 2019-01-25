@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>SEE THE PHOTOS</h1>
+                <!-- POST NEW PHOTO -->
+                <nav class="navbar">
+                    <form action="/photos/new" method="GET">
+                    <button class="btn btn-primary" type="submit">New Post</button>
+                    </form>
+                    <form action="/users" method="GET">
+                        <button class="btn btn-primary" type="submit">All Contributors</button>
+                    </form>
+                    <form action="/photos" method="GET">
+                        <button class="btn btn-primary" type="submit">All Submissions</button>
+                    </form>
+                </nav>
+                
+                <br>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col text-center">
+                <ul>
+                <% for (let i=0; i<photos.length; i++) { %>
+                <li>
+                    <img src="<%=photos[i].url%>" style="width:200px;">
+                    <br>
+                    <form action="/photos/<%=photos[i]._id%>" method="GET">
+                        <button class="btn btn-primary" type="submit">See Post</button> 
+                    </form>
+                </li>
+                <br>
+                <% } %>
+                </ul>
+            </div>
+        </div> 
+
+    </div>
+
+    
+
+
+</body>
+</html>

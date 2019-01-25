@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>NEW POST</h1>
+                <br>
+                <form action="/photos" method="POST">
+                    Username: <input type="text" name="username" autocomplete="off"><br>
+                    *must be valid user <br>
+                    Source: <input type="text" name="src" autocomplete="off" value="https://source.unsplash.com/random"><br>
+                    About: <textarea name="about">Default.</textarea><br>
+                    <button class="btn btn-primary" type="submit">Create Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
